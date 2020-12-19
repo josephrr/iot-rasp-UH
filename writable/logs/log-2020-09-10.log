@@ -1,0 +1,69 @@
+CRITICAL - 2020-09-10 17:23:02 --> file_get_contents(http://localhost/joseRodriguez/public/img): failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(18): file_get_contents('http://localhos...')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(172): App\Libraries\myqr->generarQR('http://localhos...', NULL)
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(103): App\Controllers\Documentos->crearQR(0, NULL, NULL)
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->generarPDF()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-10 17:34:44 --> Call to a member function has() on null
+#0 C:\xampp\htdocs\joseRodriguez\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\joseRodriguez\system\View\View.php(257): CodeIgniter\View\View->render('base', Array, true)
+#2 C:\xampp\htdocs\joseRodriguez\system\Common.php(1119): CodeIgniter\View\View->render('documentos/veri...', Array, true)
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(61): view('documentos/veri...', Array)
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->verificar('67', 'nykwt4')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-10 17:47:17 --> readfile(archivos/65.pdf): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'readfile(archiv...', 'C:\\xampp\\htdocs...', 159, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(159): readfile('archivos/65.pdf')
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->abrirPDF('65', 'nykwt4')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-10 17:48:37 --> readfile(archivos/66.pdf): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'readfile(archiv...', 'C:\\xampp\\htdocs...', 159, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(159): readfile('archivos/66.pdf')
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->abrirPDF('66')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-10 17:48:46 --> readfile(archivos/26.pdf): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'readfile(archiv...', 'C:\\xampp\\htdocs...', 159, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(159): readfile('archivos/26.pdf')
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->abrirPDF('26')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-10 17:48:52 --> readfile(archivos/66.pdf): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'readfile(archiv...', 'C:\\xampp\\htdocs...', 159, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(159): readfile('archivos/66.pdf')
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->abrirPDF('66')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-10 17:51:03 --> Call to a member function getSegment() on null
+#0 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->abrirPDF('67', 'nykwt4')
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-10 22:07:07 --> openssl_pkcs7_sign(): error getting private key
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_pkcs7_s...', 'C:\\xampp\\htdocs...', 7627, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\tcpdf.php(7627): openssl_pkcs7_sign('C:\\xampp\\tmp\\__...', 'C:\\xampp\\tmp\\__...', 'file://C:\\xampp...', Array, Array, 192)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(45): TCPDF->Output('C:\\xampp\\htdocs...', 'F')
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(129): App\Libraries\mypdf->elpdf(Resource id #220, '68.pdf')
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->generarPDF()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}

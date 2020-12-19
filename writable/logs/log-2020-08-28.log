@@ -1,0 +1,211 @@
+CRITICAL - 2020-08-28 11:01:24 --> fwrite() expects parameter 2 to be string, resource given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fwrite() expect...', 'C:\\xampp\\htdocs...', 53, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(53): fwrite(Resource id #82, Resource id #87)
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(114): App\Libraries\myqr->generarQR('QR/123456.png', 'http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-28 11:05:59 --> readfile(C:\Users\cuki1\AppData\Local\Temp\phpECCC.tmp): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'readfile(C:\\Use...', 'C:\\xampp\\htdocs...', 117, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(117): readfile('C:\\Users\\cuki1\\...')
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-28 11:07:29 --> readfile(C:\Users\cuki1\AppData\Local\Temp\php4B63.tmp): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'readfile(C:\\Use...', 'C:\\xampp\\htdocs...', 118, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(118): readfile('C:\\Users\\cuki1\\...')
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-28 11:11:24 --> readfile(): Filename cannot be empty
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'readfile(): Fil...', 'C:\\xampp\\htdocs...', 118, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(118): readfile('')
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-28 11:11:35 --> readfile(): Filename cannot be empty
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'readfile(): Fil...', 'C:\\xampp\\htdocs...', 118, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(118): readfile('')
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-28 11:11:51 --> readfile(): Filename cannot be empty
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'readfile(): Fil...', 'C:\\xampp\\htdocs...', 119, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(119): readfile('')
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-28 11:12:26 --> readfile(C:\Users\cuki1\AppData\Local\Temp\phpD3DF.tmp): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'readfile(C:\\Use...', 'C:\\xampp\\htdocs...', 118, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(118): readfile('C:\\Users\\cuki1\\...')
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-28 11:16:43 --> fseek() expects parameter 1 to be resource, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fseek() expects...', 'C:\\xampp\\htdocs...', 55, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(55): fseek(NULL, 0)
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(114): App\Libraries\myqr->generarQR('QR/123456.png', 'http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-28 11:18:46 --> readfile(C:\Users\cuki1\AppData\Local\Temp\php9E8C.tmp): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'readfile(C:\\Use...', 'C:\\xampp\\htdocs...', 119, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(119): readfile('C:\\Users\\cuki1\\...')
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-28 11:27:17 --> file_get_contents(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): failed to open stream: Invalid argument
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\xampp\\htdocs...', 115, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(115): file_get_contents('iVBORw0KGgoAAAA...')
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-28 13:14:56 --> file_get_contents(http://localhost/joseRodriguez/public/img/logo.png): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(18): file_get_contents('http://localhos...')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(120): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(84): App\Controllers\Documentos->crearQR('17', '6ya897')
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->verPDF('17')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-28 13:25:31 --> file_get_contents(http://localhost/joseRodriguez/public/img/logo.png): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(18): file_get_contents('http://localhos...')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(124): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(88): App\Controllers\Documentos->crearQR('19', 'mcg5hj2fqb')
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->verPDF('19')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-28 13:49:14 --> Call to undefined function fechaCastellano()
+#0 C:\xampp\htdocs\joseRodriguez\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\joseRodriguez\system\Common.php(1119): CodeIgniter\View\View->render('documentos/vist...', Array, true)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\pdf.php(16): view('documentos/vist...', Array)
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(95): App\Libraries\pdf->load_view('documentos/vist...', Array)
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->verPDF('17')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-28 14:18:16 --> Call to a member function get_cellmap() on null
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\TableCell->reflow(NULL)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\dompdf\src\FrameReflower\TableRow.php(52): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\TableRow->reflow(NULL)
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\dompdf\src\FrameReflower\TableRowGroup.php(51): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\TableRowGroup->reflow(Object(Dompdf\FrameDecorator\Block))
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\dompdf\src\FrameReflower\Block.php(845): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\Block->reflow(Object(Dompdf\FrameDecorator\Block))
+#7 C:\xampp\htdocs\joseRodriguez\app\Libraries\dompdf\src\FrameReflower\Block.php(845): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+#8 C:\xampp\htdocs\joseRodriguez\app\Libraries\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\Block->reflow(Object(Dompdf\FrameDecorator\Block))
+#9 C:\xampp\htdocs\joseRodriguez\app\Libraries\dompdf\src\FrameReflower\Block.php(845): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+#10 C:\xampp\htdocs\joseRodriguez\app\Libraries\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\Block->reflow(Object(Dompdf\FrameDecorator\Block))
+#11 C:\xampp\htdocs\joseRodriguez\app\Libraries\dompdf\src\FrameReflower\Block.php(845): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+#12 C:\xampp\htdocs\joseRodriguez\app\Libraries\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\Block->reflow(Object(Dompdf\FrameDecorator\Block))
+#13 C:\xampp\htdocs\joseRodriguez\app\Libraries\dompdf\src\FrameReflower\Block.php(845): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+#14 C:\xampp\htdocs\joseRodriguez\app\Libraries\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\Block->reflow(NULL)
+#15 C:\xampp\htdocs\joseRodriguez\app\Libraries\dompdf\src\FrameReflower\Page.php(141): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#16 C:\xampp\htdocs\joseRodriguez\app\Libraries\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\Page->reflow(NULL)
+#17 C:\xampp\htdocs\joseRodriguez\app\Libraries\dompdf\src\Dompdf.php(847): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#18 C:\xampp\htdocs\joseRodriguez\app\Libraries\pdf.php(18): Dompdf\Dompdf->render()
+#19 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(96): App\Libraries\pdf->load_view('documentos/vist...', Array)
+#20 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->verPDF('17')
+#21 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#22 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#23 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#24 {main}
+CRITICAL - 2020-08-28 14:18:22 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 266342400 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-28 16:03:16 --> date_format() expects exactly 2 parameters, 1 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date_format() e...', 'C:\\xampp\\htdocs...', 57, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Views\documentos\verificar.php(57): date_format(Object(DateTime))
+#2 C:\xampp\htdocs\joseRodriguez\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\joseRodriguez\system\Common.php(1119): CodeIgniter\View\View->render('documentos/veri...', Array, true)
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(55): view('documentos/veri...', Array)
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->verificar('18', 'kjgl45')
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-28 16:40:16 --> Call to a member function has() on null
+#0 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(890): App\Controllers\Documentos->__construct()
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-28 16:41:35 --> Call to a member function get() on null
+#0 C:\xampp\htdocs\joseRodriguez\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\joseRodriguez\system\View\View.php(257): CodeIgniter\View\View->render('base', Array, true)
+#2 C:\xampp\htdocs\joseRodriguez\system\Common.php(1119): CodeIgniter\View\View->render('documentos/veri...', Array, true)
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(54): view('documentos/veri...', Array)
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->verificar('18', 'kjgl45')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-28 16:50:48 --> Too few arguments to function App\Controllers\Documentos::crearQR(), 0 passed in C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php on line 918 and exactly 3 expected
+#0 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-28 16:52:40 --> Object of class CodeIgniter\Session\Session could not be converted to string
+#0 C:\xampp\htdocs\joseRodriguez\app\Views\base.php(126): CodeIgniter\Debug\Exceptions->errorHandler(4096, 'Object of class...', 'C:\\xampp\\htdocs...', 126, Array)
+#1 C:\xampp\htdocs\joseRodriguez\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\joseRodriguez\system\View\View.php(257): CodeIgniter\View\View->render('base', Array, true)
+#3 C:\xampp\htdocs\joseRodriguez\system\Common.php(1119): CodeIgniter\View\View->render('documentos/gene...', Array, true)
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(28): view('documentos/gene...', Array)
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->generar()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-28 17:43:03 --> readfile(archivos/18.pdf): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'readfile(archiv...', 'C:\\xampp\\htdocs...', 119, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(119): readfile('archivos/18.pdf')
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->abrirPDF('18')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-28 17:44:12 --> readfile(archivos/6.pdf): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'readfile(archiv...', 'C:\\xampp\\htdocs...', 119, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(119): readfile('archivos/6.pdf')
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->abrirPDF('6')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-28 18:00:35 --> readfile(archivos/23.pdf): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'readfile(archiv...', 'C:\\xampp\\htdocs...', 132, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(132): readfile('archivos/23.pdf')
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->abrirPDF('23')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}

@@ -1,0 +1,680 @@
+CRITICAL - 2020-08-27 15:07:50 --> This PDF document probably uses a compression technique which is not supported by the free parser shipped with FPDI. (See https://www.setasign.com/fpdi-pdf-parser for more details)
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(188): setasign\Fpdi\PdfParser\CrossReference\CrossReference->initReaderInstance(Object(setasign\Fpdi\PdfParser\Type\PdfIndirectObject))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(64): setasign\Fpdi\PdfParser\CrossReference\CrossReference->readXref(116)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#7 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(27): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #98)
+#8 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(39): App\Libraries\mypdf->elpdf(Resource id #98, '1.pdf')
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#11 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-08-27 15:07:50 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 267 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(267)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(267)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-27 13:18:17 --> file_get_contents(./menu.json): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\xampp\\htdocs...', 107, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Views\base.php(107): file_get_contents('./menu.json')
+#2 C:\xampp\htdocs\joseRodriguez\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\joseRodriguez\system\View\View.php(257): CodeIgniter\View\View->render('base', Array, true)
+#4 C:\xampp\htdocs\joseRodriguez\system\Common.php(1119): CodeIgniter\View\View->render('documentos/firm...', Array, true)
+#5 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(67): view('documentos/firm...', Array)
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->generar()
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-08-27 13:18:33 --> file_get_contents(menu.json): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\xampp\\htdocs...', 107, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Views\base.php(107): file_get_contents('menu.json')
+#2 C:\xampp\htdocs\joseRodriguez\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\joseRodriguez\system\View\View.php(257): CodeIgniter\View\View->render('base', Array, true)
+#4 C:\xampp\htdocs\joseRodriguez\system\Common.php(1119): CodeIgniter\View\View->render('documentos/firm...', Array, true)
+#5 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(67): view('documentos/firm...', Array)
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->generar()
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-08-27 13:18:34 --> file_get_contents(menu.json): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\xampp\\htdocs...', 107, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Views\base.php(107): file_get_contents('menu.json')
+#2 C:\xampp\htdocs\joseRodriguez\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\joseRodriguez\system\View\View.php(257): CodeIgniter\View\View->render('base', Array, true)
+#4 C:\xampp\htdocs\joseRodriguez\system\Common.php(1119): CodeIgniter\View\View->render('documentos/firm...', Array, true)
+#5 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(67): view('documentos/firm...', Array)
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->generar()
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-08-27 13:18:44 --> file_get_contents(/menu.json): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\xampp\\htdocs...', 107, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Views\base.php(107): file_get_contents('/menu.json')
+#2 C:\xampp\htdocs\joseRodriguez\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\joseRodriguez\system\View\View.php(257): CodeIgniter\View\View->render('base', Array, true)
+#4 C:\xampp\htdocs\joseRodriguez\system\Common.php(1119): CodeIgniter\View\View->render('documentos/firm...', Array, true)
+#5 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(67): view('documentos/firm...', Array)
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->generar()
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-08-27 13:19:20 --> file_get_contents(./../menu.json): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\xampp\\htdocs...', 107, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Views\base.php(107): file_get_contents('./../menu.json')
+#2 C:\xampp\htdocs\joseRodriguez\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\joseRodriguez\system\View\View.php(257): CodeIgniter\View\View->render('base', Array, true)
+#4 C:\xampp\htdocs\joseRodriguez\system\Common.php(1119): CodeIgniter\View\View->render('documentos/firm...', Array, true)
+#5 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(67): view('documentos/firm...', Array)
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->generar()
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-08-27 13:19:21 --> file_get_contents(./../menu.json): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\xampp\\htdocs...', 107, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Views\base.php(107): file_get_contents('./../menu.json')
+#2 C:\xampp\htdocs\joseRodriguez\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\joseRodriguez\system\View\View.php(257): CodeIgniter\View\View->render('base', Array, true)
+#4 C:\xampp\htdocs\joseRodriguez\system\Common.php(1119): CodeIgniter\View\View->render('documentos/firm...', Array, true)
+#5 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(67): view('documentos/firm...', Array)
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->generar()
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-08-27 13:19:25 --> file_get_contents(./../../menu.json): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\xampp\\htdocs...', 107, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Views\base.php(107): file_get_contents('./../../menu.js...')
+#2 C:\xampp\htdocs\joseRodriguez\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\joseRodriguez\system\View\View.php(257): CodeIgniter\View\View->render('base', Array, true)
+#4 C:\xampp\htdocs\joseRodriguez\system\Common.php(1119): CodeIgniter\View\View->render('documentos/firm...', Array, true)
+#5 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(67): view('documentos/firm...', Array)
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->generar()
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-08-27 13:19:26 --> file_get_contents(./../../menu.json): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\xampp\\htdocs...', 107, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Views\base.php(107): file_get_contents('./../../menu.js...')
+#2 C:\xampp\htdocs\joseRodriguez\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\joseRodriguez\system\View\View.php(257): CodeIgniter\View\View->render('base', Array, true)
+#4 C:\xampp\htdocs\joseRodriguez\system\Common.php(1119): CodeIgniter\View\View->render('documentos/firm...', Array, true)
+#5 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(67): view('documentos/firm...', Array)
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->generar()
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-08-27 13:20:00 --> file_get_contents(menu.json): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\xampp\\htdocs...', 107, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Views\base.php(107): file_get_contents('menu.json')
+#2 C:\xampp\htdocs\joseRodriguez\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\joseRodriguez\system\View\View.php(257): CodeIgniter\View\View->render('base', Array, true)
+#4 C:\xampp\htdocs\joseRodriguez\system\Common.php(1119): CodeIgniter\View\View->render('documentos/firm...', Array, true)
+#5 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(67): view('documentos/firm...', Array)
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->generar()
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-08-27 13:20:50 --> file_get_contents(C:\xampp\htdocs\joseRodriguez\app\Viewsmenu.json): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\xampp\\htdocs...', 107, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Views\base.php(107): file_get_contents('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\joseRodriguez\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\joseRodriguez\system\View\View.php(257): CodeIgniter\View\View->render('base', Array, true)
+#4 C:\xampp\htdocs\joseRodriguez\system\Common.php(1119): CodeIgniter\View\View->render('documentos/firm...', Array, true)
+#5 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(67): view('documentos/firm...', Array)
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->generar()
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-08-27 13:25:15 --> syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+#0 C:\xampp\htdocs\joseRodriguez\system\View\View.php(257): CodeIgniter\View\View->render('base', Array, true)
+#1 C:\xampp\htdocs\joseRodriguez\system\Common.php(1119): CodeIgniter\View\View->render('documentos/firm...', Array, true)
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(67): view('documentos/firm...', Array)
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->generar()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 14:18:02 --> Cannot redeclare App\Controllers\Documentos::generar()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-27 16:24:53 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+#0 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->generarPDF()
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-27 17:09:41 --> Call to undefined function App\Libraries\get_instance()
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\pdf.php(21): App\Libraries\pdf->ci()
+#1 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(76): App\Libraries\pdf->load_view('documentos/vist...', Array)
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->generarPDF()
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-27 17:12:46 --> Argument 3 passed to view() must be of the type array, bool given, called in C:\xampp\htdocs\joseRodriguez\app\Libraries\pdf.php on line 16
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\pdf.php(16): view('documentos/vist...', Array, true)
+#1 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(76): App\Libraries\pdf->load_view('documentos/vist...', Array)
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->generarPDF()
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-27 17:28:04 -->  route cannot be found while reverse-routing.
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\joseRodriguez\system\Common.php(845): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(70): redirect('documentos/verP...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->generarPDF()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:20:58 --> Class 'App\Libraries\QRcode' not found
+#0 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(365): require_once()
+#1 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\m...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\m...')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(111): spl_autoload_call('App\\Libraries\\m...')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-27 18:21:26 --> Class 'App\Libraries\qrcode' not found
+#0 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(365): require_once()
+#1 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\m...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\m...')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(111): spl_autoload_call('App\\Libraries\\m...')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-27 18:21:36 --> Class 'App\Libraries\myqr' not found
+#0 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-27 18:21:50 --> Class 'App\Libraries\myqr' not found
+#0 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-27 18:21:51 --> Class 'App\Libraries\myqr' not found
+#0 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-27 18:22:15 --> Class 'App\Libraries\QRcode' not found
+#0 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(365): require_once()
+#1 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\m...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\m...')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(111): spl_autoload_call('App\\Libraries\\m...')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-27 18:23:51 --> Class 'App\Libraries\qrcode\QRcode' not found
+#0 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(365): require_once()
+#1 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\m...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\m...')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(111): spl_autoload_call('App\\Libraries\\m...')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-27 18:24:14 --> Class 'App\Libraries\myqr' not found
+#0 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-27 18:24:28 --> Class 'App\Libraries\QRcode' not found
+#0 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(365): require_once()
+#1 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\m...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\m...')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(111): spl_autoload_call('App\\Libraries\\m...')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-27 18:24:39 --> Class 'App\Libraries\myqr' not found
+#0 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-27 18:39:24 --> Class 'App\Libraries\qrcode' not found
+#0 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(365): require_once()
+#1 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\m...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\m...')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(111): spl_autoload_call('App\\Libraries\\m...')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-27 18:39:26 --> Class 'App\Libraries\qrcode' not found
+#0 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(365): require_once()
+#1 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\m...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\m...')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(111): spl_autoload_call('App\\Libraries\\m...')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-27 18:40:07 --> Class 'App\Libraries\myqr' not found
+#0 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-27 18:40:18 --> Class 'App\Libraries\QRcode' not found
+#0 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(365): require_once()
+#1 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\m...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\m...')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(111): spl_autoload_call('App\\Libraries\\m...')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-27 18:40:39 --> Class 'App\Libraries\myqr' not found
+#0 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-27 18:41:27 --> Class 'App\Controllers\myqr' not found
+#0 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-27 18:41:28 --> Class 'App\Controllers\myqr' not found
+#0 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-27 18:42:39 --> Class 'App\Libraries\QRcode' not found
+#0 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(365): require_once()
+#1 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\m...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\m...')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(111): spl_autoload_call('App\\Libraries\\m...')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-27 18:43:17 --> Too few arguments to function App\Libraries\myqr::generarQR(), 1 passed in C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php on line 113 and exactly 2 expected
+#0 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-08-27 18:43:55 --> imagecreatefrompng(): Filename cannot be empty
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng('')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:44:09 --> imagecreatefrompng(): Filename cannot be empty
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng('')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:44:13 --> imagecreatefrompng(): Filename cannot be empty
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng('')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:44:14 --> imagecreatefrompng(): Filename cannot be empty
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng('')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:44:15 --> imagecreatefrompng(): Filename cannot be empty
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng('')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:44:15 --> imagecreatefrompng(): Filename cannot be empty
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng('')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:44:15 --> imagecreatefrompng(): Filename cannot be empty
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng('')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:44:15 --> imagecreatefrompng(): Filename cannot be empty
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng('')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:44:16 --> imagecreatefrompng(): Filename cannot be empty
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng('')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:44:16 --> imagecreatefrompng(): Filename cannot be empty
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng('')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:44:16 --> imagecreatefrompng(): Filename cannot be empty
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng('')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:44:22 --> imagecreatefrompng(): Filename cannot be empty
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng('')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:44:23 --> imagecreatefrompng(): Filename cannot be empty
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng('')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:44:23 --> imagecreatefrompng(): Filename cannot be empty
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng('')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:44:32 --> imagecreatefrompng(): Filename cannot be empty
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng('')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:44:32 --> imagecreatefrompng(): Filename cannot be empty
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng('')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:44:56 --> imagecreatefrompng(): Filename cannot be empty
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng('')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:45:00 --> imagecreatefrompng(): Filename cannot be empty
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng('')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:45:09 --> imagecreatefrompng(): Filename cannot be empty
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng('')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:45:16 --> imagecreatefrompng(): Filename cannot be empty
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng('')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:47:14 --> imagecreatefrompng() expects exactly 1 parameter, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng()
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:47:15 --> imagecreatefrompng() expects exactly 1 parameter, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng()
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:47:20 --> imagecreatefrompng() expects exactly 1 parameter, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng()
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:47:28 --> imagecreatefrompng() expects exactly 1 parameter, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng()
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:47:31 --> imagecreatefrompng() expects exactly 1 parameter, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng()
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:47:35 --> imagecreatefrompng() expects exactly 1 parameter, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng()
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:48:04 --> imagecreatefrompng() expects exactly 1 parameter, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng()
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:48:07 --> imagecreatefrompng() expects exactly 1 parameter, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng()
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:48:08 --> imagecreatefrompng() expects exactly 1 parameter, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng()
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:48:08 --> imagecreatefrompng() expects exactly 1 parameter, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng()
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:48:09 --> imagecreatefrompng() expects exactly 1 parameter, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreatefrompng()
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:57:11 --> imagecreate() expects exactly 2 parameters, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreate() e...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreate()
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:57:12 --> imagecreate() expects exactly 2 parameters, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreate() e...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreate()
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:57:13 --> imagecreate() expects exactly 2 parameters, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreate() e...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(15): imagecreate()
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:57:23 --> fwrite() expects parameter 2 to be string, resource given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fwrite() expect...', 'C:\\xampp\\htdocs...', 33, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(33): fwrite(Resource id #87, Resource id #84)
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:57:24 --> fwrite() expects parameter 2 to be string, resource given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fwrite() expect...', 'C:\\xampp\\htdocs...', 33, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(33): fwrite(Resource id #87, Resource id #84)
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-27 18:57:25 --> fwrite() expects parameter 2 to be string, resource given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fwrite() expect...', 'C:\\xampp\\htdocs...', 33, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(33): fwrite(Resource id #87, Resource id #84)
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(113): App\Libraries\myqr->generarQR('http://localhos...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->crearQR()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}

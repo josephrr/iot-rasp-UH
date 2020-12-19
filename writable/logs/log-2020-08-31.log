@@ -1,0 +1,708 @@
+CRITICAL - 2020-08-31 17:05:15 --> This PDF document probably uses a compression technique which is not supported by the free parser shipped with FPDI. (See https://www.setasign.com/fpdi-pdf-parser for more details)
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(188): setasign\Fpdi\PdfParser\CrossReference\CrossReference->initReaderInstance(Object(setasign\Fpdi\PdfParser\Type\PdfIndirectObject))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(64): setasign\Fpdi\PdfParser\CrossReference\CrossReference->readXref(116)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#7 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#8 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '25.pdf')
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#11 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-08-31 17:05:15 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 267 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(267)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(267)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-31 13:19:44 --> file_get_contents(http://localhost/joseRodriguez/public/img): failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(18): file_get_contents('http://localhos...')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(172): App\Libraries\myqr->generarQR('http://localhos...', NULL)
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(123): App\Controllers\Documentos->crearQR('17', NULL, NULL)
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->verPDF('17')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-31 13:19:54 --> file_get_contents(http://localhost/joseRodriguez/public/img): failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(18): file_get_contents('http://localhos...')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(172): App\Libraries\myqr->generarQR('http://localhos...', NULL)
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(123): App\Controllers\Documentos->crearQR('26', NULL, NULL)
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->verPDF('26')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-31 13:19:57 --> file_get_contents(http://localhost/joseRodriguez/public/img): failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(18): file_get_contents('http://localhos...')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(172): App\Libraries\myqr->generarQR('http://localhos...', NULL)
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(123): App\Controllers\Documentos->crearQR('256', NULL, NULL)
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->verPDF('256')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-31 13:19:59 --> file_get_contents(http://localhost/joseRodriguez/public/img): failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(18): file_get_contents('http://localhos...')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(172): App\Libraries\myqr->generarQR('http://localhos...', NULL)
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(123): App\Controllers\Documentos->crearQR('25', NULL, NULL)
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->verPDF('25')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-31 13:20:08 --> file_get_contents(http://localhost/joseRodriguez/public/img): failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\myqr.php(18): file_get_contents('http://localhos...')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(172): App\Libraries\myqr->generarQR('http://localhos...', NULL)
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(123): App\Controllers\Documentos->crearQR('26', NULL, NULL)
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->verPDF('26')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-31 17:54:49 --> This PDF document probably uses a compression technique which is not supported by the free parser shipped with FPDI. (See https://www.setasign.com/fpdi-pdf-parser for more details)
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(188): setasign\Fpdi\PdfParser\CrossReference\CrossReference->initReaderInstance(Object(setasign\Fpdi\PdfParser\Type\PdfIndirectObject))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(64): setasign\Fpdi\PdfParser\CrossReference\CrossReference->readXref(116)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#7 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#8 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '28.pdf')
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#11 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-08-31 17:54:49 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 267 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(267)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(267)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-31 17:56:27 --> This PDF document probably uses a compression technique which is not supported by the free parser shipped with FPDI. (See https://www.setasign.com/fpdi-pdf-parser for more details)
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(188): setasign\Fpdi\PdfParser\CrossReference\CrossReference->initReaderInstance(Object(setasign\Fpdi\PdfParser\Type\PdfIndirectObject))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(64): setasign\Fpdi\PdfParser\CrossReference\CrossReference->readXref(116)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#7 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#8 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '29.pdf')
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#11 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-08-31 17:56:27 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 267 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(267)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(267)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-31 17:56:44 --> This PDF document probably uses a compression technique which is not supported by the free parser shipped with FPDI. (See https://www.setasign.com/fpdi-pdf-parser for more details)
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(188): setasign\Fpdi\PdfParser\CrossReference\CrossReference->initReaderInstance(Object(setasign\Fpdi\PdfParser\Type\PdfIndirectObject))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(64): setasign\Fpdi\PdfParser\CrossReference\CrossReference->readXref(116)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#7 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#8 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '30.pdf')
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#11 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-08-31 17:56:44 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 267 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(267)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(267)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-31 18:10:11 --> This PDF document probably uses a compression technique which is not supported by the free parser shipped with FPDI. (See https://www.setasign.com/fpdi-pdf-parser for more details)
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(188): setasign\Fpdi\PdfParser\CrossReference\CrossReference->initReaderInstance(Object(setasign\Fpdi\PdfParser\Type\PdfIndirectObject))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(64): setasign\Fpdi\PdfParser\CrossReference\CrossReference->readXref(116)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#7 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#8 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '33.pdf')
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#11 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-08-31 18:10:11 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 267 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(267)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(267)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-31 18:13:51 --> The xref position points to an incorrect object type.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(188): setasign\Fpdi\PdfParser\CrossReference\CrossReference->initReaderInstance(Object(setasign\Fpdi\PdfParser\Type\PdfIndirectObject))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(64): setasign\Fpdi\PdfParser\CrossReference\CrossReference->readXref(116)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#7 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#8 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '34.pdf')
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#11 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-08-31 18:13:51 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 257 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(257)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(257)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-31 18:14:19 --> The xref position points to an incorrect object type.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(188): setasign\Fpdi\PdfParser\CrossReference\CrossReference->initReaderInstance(Object(setasign\Fpdi\PdfParser\Type\PdfIndirectObject))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(64): setasign\Fpdi\PdfParser\CrossReference\CrossReference->readXref(116)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#7 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#8 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '35.pdf')
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#11 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-08-31 18:14:19 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 257 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(257)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(257)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-31 18:31:54 --> This PDF document probably uses a compression technique which is not supported by the free parser shipped with FPDI. (See https://www.setasign.com/fpdi-pdf-parser for more details)
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(188): setasign\Fpdi\PdfParser\CrossReference\CrossReference->initReaderInstance(Object(setasign\Fpdi\PdfParser\Type\PdfIndirectObject))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(64): setasign\Fpdi\PdfParser\CrossReference\CrossReference->readXref(116)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#7 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#8 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '36.pdf')
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#11 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-08-31 18:31:54 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 267 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(267)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(267)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-31 18:37:22 --> This PDF document probably uses a compression technique which is not supported by the free parser shipped with FPDI. (See https://www.setasign.com/fpdi-pdf-parser for more details)
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(188): setasign\Fpdi\PdfParser\CrossReference\CrossReference->initReaderInstance(Object(setasign\Fpdi\PdfParser\Type\PdfIndirectObject))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(64): setasign\Fpdi\PdfParser\CrossReference\CrossReference->readXref(116)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#7 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#8 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '38.pdf')
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#11 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-08-31 18:37:22 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 267 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(267)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(267)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-31 18:54:03 --> This PDF document probably uses a compression technique which is not supported by the free parser shipped with FPDI. (See https://www.setasign.com/fpdi-pdf-parser for more details)
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(188): setasign\Fpdi\PdfParser\CrossReference\CrossReference->initReaderInstance(Object(setasign\Fpdi\PdfParser\Type\PdfIndirectObject))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(64): setasign\Fpdi\PdfParser\CrossReference\CrossReference->readXref(116)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#7 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#8 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '39.pdf')
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#11 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-08-31 18:54:03 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 267 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(267)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(267)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-31 18:57:52 --> This PDF document probably uses a compression technique which is not supported by the free parser shipped with FPDI. (See https://www.setasign.com/fpdi-pdf-parser for more details)
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(188): setasign\Fpdi\PdfParser\CrossReference\CrossReference->initReaderInstance(Object(setasign\Fpdi\PdfParser\Type\PdfIndirectObject))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(64): setasign\Fpdi\PdfParser\CrossReference\CrossReference->readXref(116)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#7 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#8 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '40.pdf')
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#11 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-08-31 18:57:52 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 267 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(267)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(267)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-31 19:00:23 --> This PDF document probably uses a compression technique which is not supported by the free parser shipped with FPDI. (See https://www.setasign.com/fpdi-pdf-parser for more details)
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(188): setasign\Fpdi\PdfParser\CrossReference\CrossReference->initReaderInstance(Object(setasign\Fpdi\PdfParser\Type\PdfIndirectObject))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(64): setasign\Fpdi\PdfParser\CrossReference\CrossReference->readXref(116)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#7 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#8 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '42.pdf')
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#11 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-08-31 19:00:23 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 267 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(267)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(267)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-31 19:00:44 --> This PDF document probably uses a compression technique which is not supported by the free parser shipped with FPDI. (See https://www.setasign.com/fpdi-pdf-parser for more details)
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(188): setasign\Fpdi\PdfParser\CrossReference\CrossReference->initReaderInstance(Object(setasign\Fpdi\PdfParser\Type\PdfIndirectObject))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(64): setasign\Fpdi\PdfParser\CrossReference\CrossReference->readXref(116)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#7 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#8 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '43.pdf')
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#11 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-08-31 19:00:44 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 267 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(267)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(267)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-31 19:02:03 --> This PDF document probably uses a compression technique which is not supported by the free parser shipped with FPDI. (See https://www.setasign.com/fpdi-pdf-parser for more details)
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(188): setasign\Fpdi\PdfParser\CrossReference\CrossReference->initReaderInstance(Object(setasign\Fpdi\PdfParser\Type\PdfIndirectObject))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(64): setasign\Fpdi\PdfParser\CrossReference\CrossReference->readXref(116)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#7 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#8 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '44.pdf')
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#11 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-08-31 19:02:03 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 267 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(267)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(267)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-31 19:06:03 --> The xref position points to an incorrect object type.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(188): setasign\Fpdi\PdfParser\CrossReference\CrossReference->initReaderInstance(Object(setasign\Fpdi\PdfParser\Type\PdfIndirectObject))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(64): setasign\Fpdi\PdfParser\CrossReference\CrossReference->readXref(116)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#7 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#8 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '46.pdf')
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#11 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-08-31 19:06:03 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 257 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(257)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(257)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-31 19:06:43 --> Call to a member function getTrailer() on null
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#6 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '47.pdf')
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-08-31 19:07:32 --> Call to a member function getTrailer() on null
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#6 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '48.pdf')
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-08-31 19:18:06 --> Call to a member function getTrailer() on null
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#6 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '49.pdf')
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-08-31 19:18:22 --> Call to a member function getTrailer() on null
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#6 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '50.pdf')
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-08-31 19:18:37 --> Call to a member function getTrailer() on null
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#6 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '51.pdf')
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-08-31 19:18:58 --> The xref position points to an incorrect object type.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(188): setasign\Fpdi\PdfParser\CrossReference\CrossReference->initReaderInstance(Object(setasign\Fpdi\PdfParser\Type\PdfIndirectObject))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(64): setasign\Fpdi\PdfParser\CrossReference\CrossReference->readXref(116)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#7 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#8 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '52.pdf')
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#11 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-08-31 19:18:58 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 257 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(257)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(257)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-31 19:22:03 --> This PDF document is encrypted and cannot be processed with FPDI.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(66): setasign\Fpdi\PdfParser\CrossReference\CrossReference->checkForEncryption(Object(setasign\Fpdi\PdfParser\Type\PdfDictionary))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#7 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '53.pdf')
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-08-31 19:22:03 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 268 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(268)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(268)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-31 19:23:29 --> The xref position points to an incorrect object type.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(188): setasign\Fpdi\PdfParser\CrossReference\CrossReference->initReaderInstance(Object(setasign\Fpdi\PdfParser\Type\PdfIndirectObject))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(64): setasign\Fpdi\PdfParser\CrossReference\CrossReference->readXref(116)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#7 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#8 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '55.pdf')
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#11 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-08-31 19:23:29 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 257 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(257)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(257)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-31 19:24:01 --> The xref position points to an incorrect object type.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(188): setasign\Fpdi\PdfParser\CrossReference\CrossReference->initReaderInstance(Object(setasign\Fpdi\PdfParser\Type\PdfIndirectObject))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(64): setasign\Fpdi\PdfParser\CrossReference\CrossReference->readXref(116)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#7 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#8 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '56.pdf')
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#11 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-08-31 19:24:01 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 257 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(257)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(257)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-31 19:25:43 --> The xref position points to an incorrect object type.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(188): setasign\Fpdi\PdfParser\CrossReference\CrossReference->initReaderInstance(Object(setasign\Fpdi\PdfParser\Type\PdfIndirectObject))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(64): setasign\Fpdi\PdfParser\CrossReference\CrossReference->readXref(116)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#7 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#8 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '57.pdf')
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#11 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-08-31 19:25:43 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 257 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(257)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(257)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-31 19:26:32 --> Call to a member function getTrailer() on null
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#6 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '58.pdf')
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-08-31 19:34:49 --> This PDF document probably uses a compression technique which is not supported by the free parser shipped with FPDI. (See https://www.setasign.com/fpdi-pdf-parser for more details)
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(188): setasign\Fpdi\PdfParser\CrossReference\CrossReference->initReaderInstance(Object(setasign\Fpdi\PdfParser\Type\PdfIndirectObject))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(64): setasign\Fpdi\PdfParser\CrossReference\CrossReference->readXref(116)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#7 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#8 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '59.pdf')
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#11 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-08-31 19:34:49 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 267 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(267)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(267)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-31 19:38:52 --> This PDF document probably uses a compression technique which is not supported by the free parser shipped with FPDI. (See https://www.setasign.com/fpdi-pdf-parser for more details)
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(188): setasign\Fpdi\PdfParser\CrossReference\CrossReference->initReaderInstance(Object(setasign\Fpdi\PdfParser\Type\PdfIndirectObject))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(64): setasign\Fpdi\PdfParser\CrossReference\CrossReference->readXref(116)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#7 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#8 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '61.pdf')
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#11 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-08-31 19:38:52 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 267 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(267)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(267)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-31 19:39:35 --> This PDF document probably uses a compression technique which is not supported by the free parser shipped with FPDI. (See https://www.setasign.com/fpdi-pdf-parser for more details)
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(188): setasign\Fpdi\PdfParser\CrossReference\CrossReference->initReaderInstance(Object(setasign\Fpdi\PdfParser\Type\PdfIndirectObject))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(64): setasign\Fpdi\PdfParser\CrossReference\CrossReference->readXref(116)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#7 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#8 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '62.pdf')
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#11 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-08-31 19:39:35 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 267 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(267)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(267)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-31 19:39:49 --> This PDF document probably uses a compression technique which is not supported by the free parser shipped with FPDI. (See https://www.setasign.com/fpdi-pdf-parser for more details)
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(188): setasign\Fpdi\PdfParser\CrossReference\CrossReference->initReaderInstance(Object(setasign\Fpdi\PdfParser\Type\PdfIndirectObject))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(64): setasign\Fpdi\PdfParser\CrossReference\CrossReference->readXref(116)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#7 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #107)
+#8 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(162): App\Libraries\mypdf->elpdf(Resource id #107, '63.pdf')
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#11 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-08-31 19:39:49 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 267 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(267)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(267)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

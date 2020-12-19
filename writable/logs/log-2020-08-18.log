@@ -1,0 +1,1035 @@
+CRITICAL - 2020-08-18 00:09:41 -->  route cannot be found while reverse-routing.
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\joseRodriguez\system\Common.php(845): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(9): redirect('login')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(890): App\Controllers\Documentos->__construct()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-18 00:09:49 -->  route cannot be found while reverse-routing.
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\joseRodriguez\system\Common.php(845): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(9): redirect('login/login')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(890): App\Controllers\Documentos->__construct()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-18 00:14:10 --> Call to a member function destroy() on null
+#0 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Login->salir()
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-18 00:21:36 --> syntax error, unexpected ';', expecting ']'
+#0 C:\xampp\htdocs\joseRodriguez\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('/documentos/fir...')
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('/documentos/fir...')
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-08-18 04:46:51 --> Class 'App\Libraries\mypdf' not found
+#0 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-18 00:47:38 --> syntax error, unexpected 'use' (T_USE), expecting '{'
+#0 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\m...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\m...')
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(23): spl_autoload_call('App\\Libraries\\m...')
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-18 00:47:38 --> syntax error, unexpected 'use' (T_USE), expecting '{'
+#0 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\m...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\m...')
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(23): spl_autoload_call('App\\Libraries\\m...')
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-18 04:47:56 --> Function get_magic_quotes_runtime() is deprecated
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdf\fpdf.php(1043): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Function get_ma...', 'C:\\xampp\\htdocs...', 1043, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdf\fpdf.php(77): FPDF->_dochecks()
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(16): FPDF->__construct()
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(23): App\Libraries\mypdf->__construct()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-18 04:53:02 --> Array and string offset access syntax with curly braces is deprecated
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\composer\ClassLoader.php(444): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Array and strin...', 'C:\\xampp\\htdocs...', 16899, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\composer\ClassLoader.php(444): include()
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('TCPDF')
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\TcpdfFpdi.php(30): spl_autoload_call('TCPDF')
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\composer\ClassLoader.php(444): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#7 [internal function]: Composer\Autoload\ClassLoader->loadClass('setasign\\Fpdi\\T...')
+#8 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(20): spl_autoload_call('setasign\\Fpdi\\T...')
+#9 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(24): App\Libraries\mypdf->elpdf()
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#11 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#12 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2020-08-18 04:58:19 --> Array and string offset access syntax with curly braces is deprecated
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\composer\ClassLoader.php(444): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Array and strin...', 'C:\\xampp\\htdocs...', 16899, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\composer\ClassLoader.php(444): include()
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('TCPDF')
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\TcpdfFpdi.php(30): spl_autoload_call('TCPDF')
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\composer\ClassLoader.php(444): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#7 [internal function]: Composer\Autoload\ClassLoader->loadClass('setasign\\Fpdi\\T...')
+#8 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(20): spl_autoload_call('setasign\\Fpdi\\T...')
+#9 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(24): App\Libraries\mypdf->elpdf()
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#11 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#12 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2020-08-18 04:59:58 --> Array and string offset access syntax with curly braces is deprecated
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\composer\ClassLoader.php(444): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Array and strin...', 'C:\\xampp\\htdocs...', 16899, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\composer\ClassLoader.php(444): include()
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('TCPDF')
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\TcpdfFpdi.php(30): spl_autoload_call('TCPDF')
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\composer\ClassLoader.php(444): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#7 [internal function]: Composer\Autoload\ClassLoader->loadClass('setasign\\Fpdi\\T...')
+#8 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(20): spl_autoload_call('setasign\\Fpdi\\T...')
+#9 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(24): App\Libraries\mypdf->elpdf()
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#11 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#12 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2020-08-18 05:00:00 --> Array and string offset access syntax with curly braces is deprecated
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\composer\ClassLoader.php(444): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Array and strin...', 'C:\\xampp\\htdocs...', 16899, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\composer\ClassLoader.php(444): include()
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('TCPDF')
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\TcpdfFpdi.php(30): spl_autoload_call('TCPDF')
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\composer\ClassLoader.php(444): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#7 [internal function]: Composer\Autoload\ClassLoader->loadClass('setasign\\Fpdi\\T...')
+#8 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(20): spl_autoload_call('setasign\\Fpdi\\T...')
+#9 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(24): App\Libraries\mypdf->elpdf()
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#11 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#12 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2020-08-18 05:00:34 --> openssl_pkcs7_sign(): error getting private key
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_pkcs7_s...', 'C:\\xampp\\htdocs...', 7627, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\tcpdf.php(7627): openssl_pkcs7_sign('C:\\xampp\\tmp\\__...', 'C:\\xampp\\tmp\\__...', 'file://', Array, Array, 192)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(44): TCPDF->Output('hola.pdf', 'I')
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(24): App\Libraries\mypdf->elpdf()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-18 05:03:13 --> fopen(): remote host file access not supported, file://hola.pdf
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(): remote...', 'C:\\xampp\\htdocs...', 1821, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1821): fopen('file://hola.pdf', 'wb')
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\tcpdf.php(7706): TCPDF_STATIC::fopenLocal('file://hola.pdf', 'wb')
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(44): TCPDF->Output('hola.pdf', 'F')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(25): App\Libraries\mypdf->elpdf()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-18 05:03:28 --> fopen(): remote host file access not supported, file://hola.pdf
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(): remote...', 'C:\\xampp\\htdocs...', 1821, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1821): fopen('file://hola.pdf', 'wb')
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\tcpdf.php(7706): TCPDF_STATIC::fopenLocal('file://hola.pdf', 'wb')
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(44): TCPDF->Output('hola.pdf', 'F')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(25): App\Libraries\mypdf->elpdf()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-18 05:04:06 --> Undefined variable: file
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 45, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(25): App\Libraries\mypdf->elpdf()
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-18 05:04:26 --> fopen(): remote host file access not supported, file://hola.pdf
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(): remote...', 'C:\\xampp\\htdocs...', 1821, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1821): fopen('file://hola.pdf', 'wb')
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\tcpdf.php(7706): TCPDF_STATIC::fopenLocal('file://hola.pdf', 'wb')
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(45): TCPDF->Output('hola.pdf', 'F')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(25): App\Libraries\mypdf->elpdf()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-18 05:04:49 --> fopen(): remote host file access not supported, file://hola.pdf
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(): remote...', 'C:\\xampp\\htdocs...', 1821, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1821): fopen('file://hola.pdf', 'wb')
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\tcpdf.php(7706): TCPDF_STATIC::fopenLocal('file://hola.pdf', 'wb')
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(45): TCPDF->Output('hola.pdf', 'F')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(25): App\Libraries\mypdf->elpdf()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-18 01:05:12 --> syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\m...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\m...')
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(24): spl_autoload_call('App\\Libraries\\m...')
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-18 01:05:15 --> syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\m...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\m...')
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(24): spl_autoload_call('App\\Libraries\\m...')
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-18 05:09:46 --> openssl_pkcs7_sign(): error getting private key
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_pkcs7_s...', 'C:\\xampp\\htdocs...', 7627, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\tcpdf.php(7627): openssl_pkcs7_sign('C:\\xampp\\tmp\\__...', 'C:\\xampp\\tmp\\__...', 'file://C:\\xampp...', Array, Array, 192)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(44): TCPDF->Output('hola.pdf', 'D')
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(25): App\Libraries\mypdf->elpdf()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-18 01:20:11 --> syntax error, unexpected 'pkcs12' (T_STRING)
+#0 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\joseRodriguez\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\m...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\m...')
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(24): spl_autoload_call('App\\Libraries\\m...')
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-18 05:20:20 --> openssl_pkcs7_sign(): error getting private key
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_pkcs7_s...', 'C:\\xampp\\htdocs...', 7627, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\tcpdf.php(7627): openssl_pkcs7_sign('C:\\xampp\\tmp\\__...', 'C:\\xampp\\tmp\\__...', 'file://C:\\xampp...', Array, Array, 192)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(44): TCPDF->Output('hola.pdf', 'D')
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(25): App\Libraries\mypdf->elpdf()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-18 05:24:19 --> openssl_pkcs7_sign(): error getting private key
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_pkcs7_s...', 'C:\\xampp\\htdocs...', 7627, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\tcpdf.php(7627): openssl_pkcs7_sign('C:\\xampp\\tmp\\__...', 'C:\\xampp\\tmp\\__...', 'file://C:\\xampp...', Array, Array, 192)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(45): TCPDF->Output('hola.pdf', 'D')
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(25): App\Libraries\mypdf->elpdf()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-18 05:24:21 --> openssl_pkcs7_sign(): error getting private key
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_pkcs7_s...', 'C:\\xampp\\htdocs...', 7627, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\tcpdf.php(7627): openssl_pkcs7_sign('C:\\xampp\\tmp\\__...', 'C:\\xampp\\tmp\\__...', 'file://C:\\xampp...', Array, Array, 192)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(45): TCPDF->Output('hola.pdf', 'D')
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(25): App\Libraries\mypdf->elpdf()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-18 05:24:38 --> openssl_pkcs7_sign(): error getting private key
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_pkcs7_s...', 'C:\\xampp\\htdocs...', 7627, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\tcpdf.php(7627): openssl_pkcs7_sign('C:\\xampp\\tmp\\__...', 'C:\\xampp\\tmp\\__...', 'file://C:\\xampp...', Array, Array, 192)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(45): TCPDF->Output('hola.pdf', 'D')
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(25): App\Libraries\mypdf->elpdf()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-18 05:24:40 --> openssl_pkcs7_sign(): error getting private key
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_pkcs7_s...', 'C:\\xampp\\htdocs...', 7627, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\tcpdf.php(7627): openssl_pkcs7_sign('C:\\xampp\\tmp\\__...', 'C:\\xampp\\tmp\\__...', 'file://C:\\xampp...', Array, Array, 192)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(45): TCPDF->Output('hola.pdf', 'D')
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(25): App\Libraries\mypdf->elpdf()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-18 05:24:41 --> openssl_pkcs7_sign(): error getting private key
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_pkcs7_s...', 'C:\\xampp\\htdocs...', 7627, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\tcpdf.php(7627): openssl_pkcs7_sign('C:\\xampp\\tmp\\__...', 'C:\\xampp\\tmp\\__...', 'file://C:\\xampp...', Array, Array, 192)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(45): TCPDF->Output('hola.pdf', 'D')
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(25): App\Libraries\mypdf->elpdf()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-18 05:27:04 --> openssl_pkcs7_sign(): error getting cert
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_pkcs7_s...', 'C:\\xampp\\htdocs...', 7627, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\tcpdf.php(7627): openssl_pkcs7_sign('C:\\xampp\\tmp\\__...', 'C:\\xampp\\tmp\\__...', 'file://C:\\xampp...', Array, Array, 192)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(46): TCPDF->Output('hola.pdf', 'D')
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(25): App\Libraries\mypdf->elpdf()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-18 06:27:30 --> fopen(): remote host file access not supported, file://hola.pdf
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(): remote...', 'C:\\xampp\\htdocs...', 1821, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1821): fopen('file://hola.pdf', 'wb')
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\tcpdf.php(7706): TCPDF_STATIC::fopenLocal('file://hola.pdf', 'wb')
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(46): TCPDF->Output('hola.pdf', 'FD')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(25): App\Libraries\mypdf->elpdf()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-18 06:27:42 --> fopen(): remote host file access not supported, file://hola.pdf
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(): remote...', 'C:\\xampp\\htdocs...', 1821, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1821): fopen('file://hola.pdf', 'wb')
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\tcpdf.php(7706): TCPDF_STATIC::fopenLocal('file://hola.pdf', 'wb')
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(46): TCPDF->Output('hola.pdf', 'FD')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(25): App\Libraries\mypdf->elpdf()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-18 06:28:04 --> fopen(): remote host file access not supported, file://hola.pdf
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(): remote...', 'C:\\xampp\\htdocs...', 1821, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1821): fopen('file://hola.pdf', 'wb')
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\tcpdf.php(7706): TCPDF_STATIC::fopenLocal('file://hola.pdf', 'wb')
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(46): TCPDF->Output('hola.pdf', 'F')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(25): App\Libraries\mypdf->elpdf()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-18 06:29:47 --> readfile(documents/$archivo): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'readfile(docume...', 'C:\\xampp\\htdocs...', 28, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(28): readfile('documents/$arch...')
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-18 16:16:01 --> Unable to find PDF file header.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(159): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile('C:\\Windows\\Temp...')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(38): App\Libraries\mypdf->elpdf('C:\\Windows\\Temp...', 'archivos/', 'archivos/hola.p...')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-18 16:16:27 --> Unable to find PDF file header.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(159): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile('C:\\Windows\\Temp...')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(38): App\Libraries\mypdf->elpdf('C:\\Windows\\Temp...', 'archivos/', 'archivos/hola.p...')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-18 16:17:21 --> Unable to find PDF file header.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(159): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile('C:\\Windows\\Temp...')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(38): App\Libraries\mypdf->elpdf('C:\\Windows\\Temp...', 'archivos/', 'archivos/hola.p...')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-18 16:17:44 --> Unable to find PDF file header.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(159): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile('C:\\Windows\\Temp...')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(38): App\Libraries\mypdf->elpdf('C:\\Windows\\Temp...', 'archivos/', 'archivos/hola.p...')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-18 16:18:08 --> Unable to find PDF file header.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(159): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile('C:\\Windows\\Temp...')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(38): App\Libraries\mypdf->elpdf('C:\\Windows\\Temp...', 'archivos/', 'archivos/hola.p...')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-18 16:18:28 --> Unable to find PDF file header.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(159): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile('C:\\Windows\\Temp...')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(39): App\Libraries\mypdf->elpdf('C:\\Windows\\Temp...', 'archivos/', 'archivos/hola.p...')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-18 16:19:20 --> This PDF document is encrypted and cannot be processed with FPDI.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(66): setasign\Fpdi\PdfParser\CrossReference\CrossReference->checkForEncryption(Object(setasign\Fpdi\PdfParser\Type\PdfDictionary))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile('C:\\xampp\\tmp\\ph...')
+#7 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(39): App\Libraries\mypdf->elpdf('C:\\xampp\\tmp\\ph...', 'archivos/', 'archivos/hola.p...')
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-08-18 16:19:20 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 268 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(268)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(268)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-18 16:19:56 --> fopen(archivos/hola.pdf): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(archivos/...', 'C:\\xampp\\htdocs...', 44, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\StreamReader.php(44): fopen('archivos/hola.p...', 'rb')
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(136): setasign\Fpdi\PdfParser\StreamReader::createByFile('archivos/hola.p...')
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(172): setasign\Fpdi\TcpdfFpdi->getPdfReaderId('archivos/hola.p...')
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile('archivos/hola.p...')
+#5 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(39): App\Libraries\mypdf->elpdf('archivos/hola.p...', 'archivos/', 'archivos/hola.p...')
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-08-18 16:25:25 --> Unable to find PDF file header.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(159): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Object(setasign\Fpdi\PdfParser\StreamReader))
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(40): App\Libraries\mypdf->elpdf(Resource id #90, 'archivos/', 'archivos/hola.p...')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-18 16:25:38 --> Unable to find PDF file header.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(159): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Object(setasign\Fpdi\PdfParser\StreamReader))
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(40): App\Libraries\mypdf->elpdf(Resource id #90, 'archivos/', 'archivos/hola.p...')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-18 16:26:27 --> This PDF document is encrypted and cannot be processed with FPDI.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(66): setasign\Fpdi\PdfParser\CrossReference\CrossReference->checkForEncryption(Object(setasign\Fpdi\PdfParser\Type\PdfDictionary))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile(Object(setasign\Fpdi\PdfParser\StreamReader))
+#7 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(39): App\Libraries\mypdf->elpdf(Resource id #90, 'archivos/', 'archivos/hola.p...')
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-08-18 16:26:27 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 268 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(268)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(268)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-18 16:28:42 --> fopen(): remote host file access not supported, file://archivos//archivos/hola.pdf
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(): remote...', 'C:\\xampp\\htdocs...', 1821, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1821): fopen('file://archivos...', 'wb')
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\tcpdf.php(7706): TCPDF_STATIC::fopenLocal('file://archivos...', 'wb')
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(47): TCPDF->Output('archivos//archi...', 'F')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(39): App\Libraries\mypdf->elpdf('', 'archivos/', 'archivos/hola.p...')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-18 16:29:30 --> Class 'App\Libraries\StreamReader' not found
+#0 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(39): App\Libraries\mypdf->elpdf('', 'archivos/', 'archivos/hola.p...')
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-08-18 16:30:09 --> var_dump() expects at least 1 parameter, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'var_dump() expe...', 'C:\\xampp\\htdocs...', 27, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(27): var_dump()
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(39): App\Libraries\mypdf->elpdf('', 'archivos/', 'archivos/hola.p...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-18 16:30:25 --> var_dump() expects at least 1 parameter, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'var_dump() expe...', 'C:\\xampp\\htdocs...', 27, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(27): var_dump()
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(39): App\Libraries\mypdf->elpdf('', 'archivos/', 'archivos/hola.p...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-18 16:30:56 --> var_dump() expects at least 1 parameter, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'var_dump() expe...', 'C:\\xampp\\htdocs...', 27, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(27): var_dump()
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(39): App\Libraries\mypdf->elpdf('', 'archivos/', 'archivos/hola.p...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-18 16:31:21 --> var_dump() expects at least 1 parameter, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'var_dump() expe...', 'C:\\xampp\\htdocs...', 27, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(27): var_dump()
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(45): App\Libraries\mypdf->elpdf('', 'archivos/', 'archivos/hola.p...')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-18 16:31:47 --> Undefined variable: nombreFile
+#0 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 46, Array)
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-08-18 16:32:04 --> var_dump() expects at least 1 parameter, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'var_dump() expe...', 'C:\\xampp\\htdocs...', 27, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(27): var_dump()
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(46): App\Libraries\mypdf->elpdf('', '', '')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-18 16:32:31 --> var_dump() expects at least 1 parameter, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'var_dump() expe...', 'C:\\xampp\\htdocs...', 27, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(27): var_dump()
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(46): App\Libraries\mypdf->elpdf('', '', '')
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-18 16:32:42 --> fopen(): remote host file access not supported, file://archivos/hola.pdf
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(): remote...', 'C:\\xampp\\htdocs...', 1821, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1821): fopen('file://archivos...', 'wb')
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\tcpdf.php(7706): TCPDF_STATIC::fopenLocal('file://archivos...', 'wb')
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(48): TCPDF->Output('archivos/hola.p...', 'F')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(46): App\Libraries\mypdf->elpdf('', '', '')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-18 16:33:09 --> fopen(): remote host file access not supported, file://archivos/hola.pdf
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(): remote...', 'C:\\xampp\\htdocs...', 1821, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1821): fopen('file://archivos...', 'wb')
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\tcpdf.php(7706): TCPDF_STATIC::fopenLocal('file://archivos...', 'wb')
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(48): TCPDF->Output('archivos/hola.p...', 'F')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(46): App\Libraries\mypdf->elpdf('', '', '')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-18 16:33:44 --> fopen(): remote host file access not supported, file://archivos/hola.pdf
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(): remote...', 'C:\\xampp\\htdocs...', 1821, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1821): fopen('file://archivos...', 'wb')
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\tcpdf.php(7706): TCPDF_STATIC::fopenLocal('file://archivos...', 'wb')
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(48): TCPDF->Output('archivos/hola.p...', 'F')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(46): App\Libraries\mypdf->elpdf()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-18 16:35:54 --> fopen() expects at least 2 parameters, 1 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen() expects...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): fopen('prueba.pdf')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(46): App\Libraries\mypdf->elpdf()
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-18 16:36:08 --> fopen() expects at least 2 parameters, 1 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen() expects...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): fopen('prueba.pdf')
+#2 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(46): App\Libraries\mypdf->elpdf()
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-18 16:36:47 --> Class 'App\Libraries\StreamReader' not found
+#0 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(46): App\Libraries\mypdf->elpdf()
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-08-18 16:36:55 --> Class 'App\Libraries\StreamReader' not found
+#0 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(46): App\Libraries\mypdf->elpdf()
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-08-18 16:39:51 --> This PDF document is encrypted and cannot be processed with FPDI.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(66): setasign\Fpdi\PdfParser\CrossReference\CrossReference->checkForEncryption(Object(setasign\Fpdi\PdfParser\Type\PdfDictionary))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(26): setasign\Fpdi\TcpdfFpdi->setSourceFile('archivos/hola.p...')
+#7 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(34): App\Libraries\mypdf->elpdf('archivos/hola.p...')
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-08-18 16:39:51 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 268 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(268)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(268)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-18 16:41:31 --> Too few arguments to function App\Libraries\mypdf::elpdf(), 0 passed in C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php on line 34 and exactly 1 expected
+#0 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(34): App\Libraries\mypdf->elpdf()
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-08-18 16:44:00 --> This PDF document is encrypted and cannot be processed with FPDI.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(66): setasign\Fpdi\PdfParser\CrossReference\CrossReference->checkForEncryption(Object(setasign\Fpdi\PdfParser\Type\PdfDictionary))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(27): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #89)
+#7 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(34): App\Libraries\mypdf->elpdf(Resource id #89)
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-08-18 16:44:00 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 268 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(268)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(268)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-18 16:45:37 --> This PDF document is encrypted and cannot be processed with FPDI.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(66): setasign\Fpdi\PdfParser\CrossReference\CrossReference->checkForEncryption(Object(setasign\Fpdi\PdfParser\Type\PdfDictionary))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(27): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #89)
+#7 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(34): App\Libraries\mypdf->elpdf(Resource id #89)
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-08-18 16:45:37 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 268 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(268)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(268)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-18 16:47:42 --> This PDF document is encrypted and cannot be processed with FPDI.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(66): setasign\Fpdi\PdfParser\CrossReference\CrossReference->checkForEncryption(Object(setasign\Fpdi\PdfParser\Type\PdfDictionary))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(27): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #89)
+#7 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(34): App\Libraries\mypdf->elpdf(Resource id #89)
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-08-18 16:47:42 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 268 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(268)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(268)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-18 16:48:53 --> This PDF document is encrypted and cannot be processed with FPDI.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(66): setasign\Fpdi\PdfParser\CrossReference\CrossReference->checkForEncryption(Object(setasign\Fpdi\PdfParser\Type\PdfDictionary))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(27): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #89)
+#7 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(34): App\Libraries\mypdf->elpdf(Resource id #89)
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-08-18 16:48:53 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 268 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(268)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(268)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-18 16:49:10 --> This PDF document is encrypted and cannot be processed with FPDI.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(66): setasign\Fpdi\PdfParser\CrossReference\CrossReference->checkForEncryption(Object(setasign\Fpdi\PdfParser\Type\PdfDictionary))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(27): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #89)
+#7 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(34): App\Libraries\mypdf->elpdf(Resource id #89)
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-08-18 16:49:10 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 268 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(268)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(268)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-18 16:50:08 --> This PDF document is encrypted and cannot be processed with FPDI.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(66): setasign\Fpdi\PdfParser\CrossReference\CrossReference->checkForEncryption(Object(setasign\Fpdi\PdfParser\Type\PdfDictionary))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(27): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #89)
+#7 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(34): App\Libraries\mypdf->elpdf(Resource id #89)
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-08-18 16:50:08 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 268 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(268)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(268)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-18 16:50:40 --> fopen(): remote host file access not supported, file://../../hola222.pdf
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(): remote...', 'C:\\xampp\\htdocs...', 1821, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1821): fopen('file://../../ho...', 'wb')
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\tcpdf.php(7706): TCPDF_STATIC::fopenLocal('file://../../ho...', 'wb')
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(47): TCPDF->Output('../../hola222.p...', 'F')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(34): App\Libraries\mypdf->elpdf(Resource id #89)
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-18 17:05:19 --> fopen(file://C:\xampp\htdocs\joseRodriguez\app\Libraries../../../archivos/archivos/comprobante-pagoFri Aug 14 2020 11_40_29 GMT-0400 (hora estándar de Chile).pdf): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(file://C:...', 'C:\\xampp\\htdocs...', 1821, Array)
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1821): fopen('file://C:\\xampp...', 'wb')
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\tecnickcom\tcpdf\tcpdf.php(7706): TCPDF_STATIC::fopenLocal('file://C:\\xampp...', 'wb')
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(47): TCPDF->Output('C:\\xampp\\htdocs...', 'F')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(33): App\Libraries\mypdf->elpdf(Resource id #89, 'archivos/compro...')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-18 17:06:23 --> Unable to find PDF file header.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(159): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(27): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #128)
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(33): App\Libraries\mypdf->elpdf(Resource id #128, 'politicaPrivaci...')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-18 17:06:34 --> This PDF document is encrypted and cannot be processed with FPDI.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(66): setasign\Fpdi\PdfParser\CrossReference\CrossReference->checkForEncryption(Object(setasign\Fpdi\PdfParser\Type\PdfDictionary))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(27): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #89)
+#7 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(33): App\Libraries\mypdf->elpdf(Resource id #89, 'hola.pdf')
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-08-18 17:06:34 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 268 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(268)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(268)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-18 17:13:04 --> Unable to find PDF file header.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(159): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(27): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #128)
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(33): App\Libraries\mypdf->elpdf(Resource id #128, 'politicaPrivaci...')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-18 17:13:44 --> Unable to find PDF file header.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(159): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(27): setasign\Fpdi\TcpdfFpdi->setSourceFile(Resource id #128)
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(33): App\Libraries\mypdf->elpdf(Resource id #128, 'politicaPrivaci...')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-18 17:27:29 --> Unable to find PDF file header.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(159): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(27): setasign\Fpdi\TcpdfFpdi->setSourceFile('subidos/politic...')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(38): App\Libraries\mypdf->elpdf('subidos/politic...', 'politicaPrivaci...')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-18 17:27:51 --> This PDF document is encrypted and cannot be processed with FPDI.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(66): setasign\Fpdi\PdfParser\CrossReference\CrossReference->checkForEncryption(Object(setasign\Fpdi\PdfParser\Type\PdfDictionary))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(27): setasign\Fpdi\TcpdfFpdi->setSourceFile('subidos/hola.pd...')
+#7 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(38): App\Libraries\mypdf->elpdf('subidos/hola.pd...', 'hola.pdf')
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-08-18 17:27:51 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 268 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(268)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(268)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-18 17:28:04 --> Unable to find PDF file header.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(159): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(27): setasign\Fpdi\TcpdfFpdi->setSourceFile('subidos/politic...')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(38): App\Libraries\mypdf->elpdf('subidos/politic...', 'politicaPrivaci...')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-18 17:29:02 --> This PDF document is encrypted and cannot be processed with FPDI.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\CrossReference\CrossReference.php(66): setasign\Fpdi\PdfParser\CrossReference\CrossReference->checkForEncryption(Object(setasign\Fpdi\PdfParser\Type\PdfDictionary))
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(145): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct(Object(setasign\Fpdi\PdfParser\PdfParser), 0)
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(184): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(169): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#4 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#5 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#6 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(27): setasign\Fpdi\TcpdfFpdi->setSourceFile('subidos/hola.pd...')
+#7 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(38): App\Libraries\mypdf->elpdf('subidos/hola.pd...', 'adasda.pdf')
+#8 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#9 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#10 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-08-18 17:29:02 --> Uncaught CodeIgniter\HTTP\Exceptions\HTTPException: Unknown HTTP status code provided with no message: 268 in C:\xampp\htdocs\joseRodriguez\system\HTTP\Exceptions\HTTPException.php:179
+Stack trace:
+#0 C:\xampp\htdocs\joseRodriguez\system\HTTP\Response.php(319): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(268)
+#1 C:\xampp\htdocs\joseRodriguez\system\Debug\Exceptions.php(162): CodeIgniter\HTTP\Response->setStatusCode(268)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-18 17:29:41 --> Unable to find PDF file header.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(159): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(27): setasign\Fpdi\TcpdfFpdi->setSourceFile('subidos/politic...')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(38): App\Libraries\mypdf->elpdf('subidos/politic...', 'adasda.pdf')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-18 17:29:56 --> Unable to find PDF file header.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(159): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(27): setasign\Fpdi\TcpdfFpdi->setSourceFile('subidos/politic...')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(38): App\Libraries\mypdf->elpdf('subidos/politic...', 'adasda.pdf')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-18 17:30:03 --> Unable to find PDF file header.
+#0 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfParser\PdfParser.php(159): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\PdfReader\PdfReader.php(71): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 C:\xampp\htdocs\joseRodriguez\app\Libraries\fpdi\vendor\setasign\fpdi\src\FpdiTrait.php(176): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 C:\xampp\htdocs\joseRodriguez\app\Libraries\mypdf.php(27): setasign\Fpdi\TcpdfFpdi->setSourceFile('subidos/politic...')
+#4 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(38): App\Libraries\mypdf->elpdf('subidos/politic...', 'adasda.pdf')
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#7 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-08-18 18:27:14 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(39): App\Libraries\mypdf->elpdf(Resource id #106, Object(CodeIgniter\Database\MySQLi\Result))
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-08-18 14:38:04 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-18 14:38:38 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-18 23:29:57 --> syntax error, unexpected ',', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 C:\xampp\htdocs\joseRodriguez\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('/documentos/fir...')
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('/documentos/fir...')
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-08-18 23:30:06 --> syntax error, unexpected ',', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 C:\xampp\htdocs\joseRodriguez\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('/documentos/fir...')
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('/documentos/fir...')
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-08-18 23:30:28 --> syntax error, unexpected ',', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 C:\xampp\htdocs\joseRodriguez\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('/documentos/fir...')
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('/documentos/fir...')
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-08-18 23:30:48 --> syntax error, unexpected ',', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 C:\xampp\htdocs\joseRodriguez\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('/documentos/fir...')
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('/documentos/fir...')
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-08-18 23:30:57 --> syntax error, unexpected ',', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 C:\xampp\htdocs\joseRodriguez\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('/documentos/fir...')
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('/documentos/fir...')
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}

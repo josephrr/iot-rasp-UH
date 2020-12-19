@@ -1,0 +1,40 @@
+CRITICAL - 2020-11-19 14:35:05 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\joseRodriguez\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\joseRodriguez\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\joseRodriguez\app\Models\UsuariosModel.php(89): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Login.php(15): App\Models\UsuariosModel->buscarUsuario()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Login->login()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-19 14:35:06 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\joseRodriguez\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\joseRodriguez\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\joseRodriguez\app\Models\UsuariosModel.php(89): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Login.php(15): App\Models\UsuariosModel->buscarUsuario()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Login->login()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-19 14:35:07 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\joseRodriguez\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\joseRodriguez\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\joseRodriguez\app\Models\UsuariosModel.php(89): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Login.php(15): App\Models\UsuariosModel->buscarUsuario()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Login->login()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-19 14:35:10 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\joseRodriguez\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\joseRodriguez\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\joseRodriguez\app\Models\UsuariosModel.php(89): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\joseRodriguez\app\Controllers\Login.php(15): App\Models\UsuariosModel->buscarUsuario()
+#4 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Login->login()
+#5 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}

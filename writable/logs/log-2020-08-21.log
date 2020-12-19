@@ -1,0 +1,14 @@
+CRITICAL - 2020-08-21 17:13:47 --> syntax error, unexpected ',', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 C:\xampp\htdocs\joseRodriguez\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('/documentos/fir...')
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('/documentos/fir...')
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-08-21 17:14:33 --> Too few arguments to function App\Models\DocumentosModel::setFechaExamen(), 0 passed in C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php on line 35 and exactly 1 expected
+#0 C:\xampp\htdocs\joseRodriguez\app\Controllers\Documentos.php(35): App\Models\DocumentosModel->setFechaExamen()
+#1 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(918): App\Controllers\Documentos->firmarDoc()
+#2 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documentos))
+#3 C:\xampp\htdocs\joseRodriguez\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\joseRodriguez\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
